@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int a = 1234;
+    int a = 12345;
     
     int units = a / 1 % 10;
     int ten = a / 10 % 10;
