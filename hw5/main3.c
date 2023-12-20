@@ -1,14 +1,16 @@
 #include <stdio.h>
 
 int main() {
-
-    int y=1;
-    int x=1;
+    
+    for(int i = 1; i <= 81; i++) {
+        int y = (i - 1) / 9 + 1;
+        int x = (i - 1) % 9 + 1;
+        printf("%d*%d=%d\t", y, x, y * x);
         
-    while(y<=9){
-        printf("%d*%d=%d\t",y,x,y*x);
-        x<9 ? x++:(x=1,y++,printf("\n"));
+        if (i % 9 == 0) {
+            printf("\n");
         }
+    }
+
     return 0;
-        
 }
